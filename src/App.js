@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from './video/worldconnect.mp4'
+import bgImage from './video/techvid.mp4'
 import './App.css';
 
 function App() {
