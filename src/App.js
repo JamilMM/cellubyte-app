@@ -1,19 +1,15 @@
-import React from 'react';
-import bgImage from './video/techvid.mp4'
-import './App.css';
+import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+
+import Home from './routes/Home'
 
 function App() {
    return(
-     <div className="App">
-      <div className='text-wrapper'>
-      <video autoPlay loop muted>
-           <source src={bgImage} type="video/mp4" />
-        </video>
-         <h1 className="title"> CELLUBYTE</h1>
-         <p>Cellubyte is a simple and easy to use network coverage map for your 5G device</p>
-         <p>Official Website Launching Early 2022</p>
-      </div>
-     </div>
+     <>
+       <Routes>
+          <Route path='/' element={<Home />} />
+       </Routes>
+     </>
    );
 }
 
